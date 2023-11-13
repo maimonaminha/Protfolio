@@ -1,0 +1,306 @@
+@font-face{
+    font-family: myFont;
+    src:url(Agbalumo-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    padding:  10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    font-family: myFont;
+    color: #706a9c;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #706a9c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 80px;
+    text-align: center;
+    font-family: myFont;
+}
+
+.welcome{
+    font-family: myFont;
+    font-size: 18px;
+    color: #C3ACD0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hello{
+    font-family: myFont;
+    font-size: 32px;
+    color: #706a9c;
+    margin-bottom: 10px;
+}
+
+.name{
+    font-family: myFont;
+    font-size: 40px;
+    color: #706a9c;
+    margin-bottom: 10px;
+}
+
+.text1{
+    font-family: myFont;
+    font-size: 15px;
+    color: #8c85c4;
+    margin-bottom: 10px;
+}
+
+.text2{
+    font-family: myFont;
+    font-size: 15px;
+    color: #8c85c4;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-img{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+#about{
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: 80px;
+}
+
+.about-col-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    float: left;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+    margin-left: 50px;
+}
+
+.about-col-2 h1{
+    font-family: myFont;
+    font-size: 50px;
+    color: #706a9c;
+    margin-bottom: 10px;
+}
+
+.about-col-2 p{
+    font-family: myFont;
+    font-size: 20px;
+    color: #9e96da;
+    margin-bottom: 10px;
+}
+
+#education{
+    padding: 30px 0;
+}
+
+.sub-title{
+    font-family: myFont;
+    font-size: 50px;
+    color: #706a9c;
+}
+
+.education-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.education-list div{
+    background: #706a9c;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.education-list div i{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.education-list div h2{
+    font-family: myFont;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.education-list div p{
+    font-family: myFont;
+    color: white;
+}
+
+.education-list div a{
+    font-family: myFont;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.education-list div:hover{
+    background: #A2678A;
+    transform: translate(-10px);
+
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    font-family: myFont;
+    color: #706a9c;
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #706a9c;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #706a9c;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+.btn{
+    font-family: myFont;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #706a9c;
+    padding: 14px 50px;
+    border-radius:  6px;
+    text-decoration: none;
+    color: #706a9c;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    font-family: myFont;
+    background: #A2678A;
+    color: white;
+}
+
+.btn-btn2{
+    font-family: myFont;
+    font-size: 20px;
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 2px solid #706a9c;
+    padding: 14px 50px;
+    border-radius:  6px;
+    text-decoration: none;
+    color: #706a9c;
+    transition: background 0.5s;
+}
+
+.btn-btn2:hover{
+    font-family: myFont;
+    background: #A2678A;
+    color: white;
+}
+
+.contact-right form{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+    width: 100%;
+}
+
+form input, form textarea{
+    font-family: myFont;
+    width: 100%;
+    border: 2px solid #706a9c;
+    padding: 15px;
+    margin: 15px 0;
+    color: #706a9c;
+    font-size: 18px;
+    border-radius: 6px;
+}
